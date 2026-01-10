@@ -69,3 +69,14 @@
   color: #000000;
 }
 
+/* Light mode (default Bootstrap behavior) */
+.accordion-button::after {
+  filter: none;
+}
+
+/* Dark mode arrow color */
+.bg-dark .accordion-button::after {
+  filter: invert(1);
+}
+
+

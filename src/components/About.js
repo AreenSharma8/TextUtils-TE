@@ -8,16 +8,17 @@ export default function About(props) {
                 <div className={`accordion ${props.mode === 'dark' ? 'bg-dark text-light' : ''}`} id="accordionExample">
                     <div className={`accordion-item ${props.mode === 'dark' ? 'bg-dark text-light' : ''}`}>
                         <h2 className="accordion-header">
-                            <button className={`accordion-button ${props.mode === 'dark' ? 'bg-dark text-light' : ''}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button className={`accordion-button collapsed ${props.mode === 'dark' ? 'bg-dark text-light' : ''}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 <strong>Features of TextUtils</strong>
                             </button>
                         </h2>
-                        <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
                                 TextUtils provides multiple features such as text transformation, live preview, word and character counter, and dark/light mode support, which makes the user experience smooth, clean, and comfortable.
                             </div>
                         </div>
                     </div>
+
                     <div className={`accordion-item ${props.mode === 'dark' ? 'bg-dark text-light' : ''}`}>
                         <h2 className="accordion-header">
                             <button className={`accordion-button collapsed ${props.mode === 'dark' ? 'bg-dark text-light' : ''}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -30,6 +31,7 @@ export default function About(props) {
                             </div>
                         </div>
                     </div>
+
                     <div className={`accordion-item ${props.mode === 'dark' ? 'bg-dark text-light' : ''}`}>
                         <h2 className="accordion-header">
                             <button className={`accordion-button collapsed ${props.mode === 'dark' ? 'bg-dark text-light' : ''}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
