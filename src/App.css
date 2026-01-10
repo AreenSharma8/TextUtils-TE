@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+.dark-textarea {
+  background-color: #212529 !important;
+  color: #ffffff !important;
+  border-color: #0d6efd;
+}
+
+.dark-textarea::placeholder {
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.dark-textarea:focus {
+  background-color: #212529 !important;
+  color: #ffffff !important;
+  box-shadow: none;
+}
+
+.light-textarea {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.light-textarea::placeholder {
+  color: #000000;
+  opacity: 0.6;
+}
+
+.light-textarea:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
